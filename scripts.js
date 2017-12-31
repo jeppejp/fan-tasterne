@@ -22,7 +22,14 @@ function view_tilmeldte()
             var text = "";
             for (i in myObj)
             {
-                text += myObj[i].name + "<br />";
+                if (myObj[i].pay == 1)
+                {
+                    var ball = "<figure class=\"fig_payed\"></figure>";
+                }else{
+                    var ball = "<figure class=\"fig_notpayed\"></figure>";
+                }
+
+                text += "<div>" + ball + "  " +myObj[i].id + " - " + myObj[i].name + "</div>";
             }
             con.innerHTML = text;
         }

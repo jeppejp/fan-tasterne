@@ -54,3 +54,19 @@ a:hover, a:active, a:link, a:visited {
             background-color: var(--color-highlight);
             padding: 10px;
             }
+.fig_payed  {
+            display: inline-block;
+            background: green;
+            border-radius: 50px;
+            height: 15px;
+            width: 15px;
+            margin: 0;
+            }
+.fig_notpayed  {
+            display: inline-block;
+            background: red;
+            border-radius: 50px;
+            height: 15px;
+            width: 15px;
+            margin: 0;
+            }
