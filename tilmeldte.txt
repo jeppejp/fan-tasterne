@@ -1,0 +1,12 @@
+#Tilmeldte
+Her på listen kan du se hvem der er tilmeldt og hvem der har betalt.
+Registreringen af hvem der har betalt foregår manuelt, så der kan gå nogle dage, fra du har betalt til det bliver opdateret her på siden.
+
+##Sådan gør du
+Du skal betale så snart du har meldt dig til, det gør du ved at overføre XXX til Reg. nr XXXX konto nr. xxxx xxxx xxxx.
+Det er vigtigt at du skriver dit nummer og det navn du  har brugt i din tilmelding i beskeden til os. F.eks.
+\"100 - Hans Hansen\"
+
+
+<div id=\"tilmeldte_container\">
+</div>

@@ -1,0 +1,56 @@
+:root       {
+            --color-background: #fefefe;
+            --color-highlight: #ff3b3f;
+            --color-normal: #a9a9a9;
+            --color-backdrop: #efefef;
+            }
+
+body        {
+            background-image: url("http://www.jeppejp.dk/markdowntest/party_gs2.jpg");
+            background-repeat: repeat-x;
+            font-family: 'Overpass', sans-serif;
+            background-position: center top;
+            background-color: var(--color-background);
+            }
+h1,h2,h3,h4 {
+            color: var(--color-highlight);
+            font-family: 'Overpass Mono', monospace;
+            }
+#output     {
+            margin: auto; 
+            max-width: 680px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            }
+#menu       {
+            font-family: 'Overpass Mono', monospace;
+            margin: auto; 
+            text-align: center;
+            }
+.menuitem   {
+
+            text-align: center;
+            padding: 5px;
+            font-size: 20px;
+            background-color: var(--color-backdrop);
+            border: 1px solid var(--color-highlight);
+            display: inline-block;
+            margin: 10 auto 0;
+            }
+.menuitema  {
+            text-align: center;
+            padding: 5px;
+            font-size: 20px;
+            background-color: var(--color-highlight);
+            border: 1px solid var(--color-backdrop);
+            display: inline-block;
+            margin: 10 auto 0;
+            }
+a:hover, a:active, a:link, a:visited {
+            color: #000000;
+            }
+#alert      {
+            border: 1px dashed black;
+            background-color: var(--color-highlight);
+            padding: 10px;
+            }

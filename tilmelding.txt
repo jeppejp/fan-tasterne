@@ -1,0 +1,8 @@
+#Tilmelding
+Tilmeld dig til Fan-Tasternes karnevals vogn her!
+<div id=\"signup_error_output\"></div>
+
+<table>
+<tr><td>Navn:</td><td><input id=\"name\"></td></tr>
+<tr><td></td><td><input type=\"button\" onclick=\"validate_signup()\" value=\"Tilmeld\"></td></tr>
+</table>
