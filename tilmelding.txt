@@ -4,5 +4,5 @@ Tilmeld dig til Fan-Tasternes karnevals vogn her!
 
 <table>
 <tr><td>Navn:</td><td><input id=\"name\"></td></tr>
-<tr><td></td><td><input type=\"button\" onclick=\"validate_signup()\" value=\"Tilmeld\"></td></tr>
+<tr><td></td><td><input type=\"button\" onclick=\"validate_signup()\" value=\"Tilmeld\" id=\"signup_button\"></td></tr>
 </table>

@@ -40,11 +40,35 @@ function view_tilmeldte()
 
 function validate_signup()
 {
-    var output = document.getElementById("signup_error_output");
-    var newele = document.createElement('div');
-    newele.id = 'alert';
-    newele.innerHTML = "NEJ TAK DO!";
-    output.appendChild(newele);
+
+    var button = document.getElementById('signup_button');
+    button.disabled = true;
+    var input_name = document.getElementById('name').value;
+    console.log(input_name);
+    
+    
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var myObj = JSON.parse(this.responseText);
+            var output = document.getElementById("signup_error_output");
+            output.innerHTML = "";
+            var newele = document.createElement('div');
+            newele.innerHTML = myObj.text;
+            if (myObj.error == 1)
+            {
+                newele.id = 'alert';
+                var button = document.getElementById('signup_button');
+                button.disabled = false;
+            }else
+            {
+                newele.id = 'noerror';
+            }
+            output.appendChild(newele);
+        }
+    };
+    xmlhttp.open("GET", "do_tilmelding.php?name="+input_name, true);
+    xmlhttp.send();
 }
 
 document.addEventListener("DOMContentLoaded", function() {

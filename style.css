@@ -54,6 +54,11 @@ a:hover, a:active, a:link, a:visited {
             background-color: var(--color-highlight);
             padding: 10px;
             }
+#noerror    {
+            border: 1px dashed black;
+            background-color: var(--color-backdrop);
+            padding: 10px;
+            }
 .fig_payed  {
             display: inline-block;
             background: green;
