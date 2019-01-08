@@ -6,7 +6,7 @@
             }
 
 body        {
-            background-image: url("http://www.jeppejp.dk/markdowntest/party_gs2.jpg");
+            background-image: url("/party_gs2.jpg");
             background-repeat: repeat-x;
             font-family: 'Overpass', sans-serif;
             background-position: center top;
